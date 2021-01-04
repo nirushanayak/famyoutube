@@ -10,10 +10,13 @@ from YouTube for a given tag/search query in a paginated response.
 
 3.to run the project locally :
   1. git clone the repository 
-      git clone 
-  1. pip install -r requirement.txt
-  2. run ./run.sh script
-      this will run python manage.py runserver at port 8000 and also will start a q_cluster process wich is scheduled every 2 mins to pull latest youtube videos
+      git clone https://github.com/nirushanayak/famyoutube.git
+  2. pip install -r requirement.txt
+  3. run ./run.sh script
+      this will run python manage.py runserver at port 8000 and also will start a q_cluster process wich is scheduled every 2 mins to pull latest youtube videos which can be managed/viewed in http://127.0.0.1:8000/admin/django_q
 
+API search :
+http://localhost:8000/videos/ : will give the list of youtube video with pagination , by default wil descending order of published date
+and have functionality to search and filter 
 
    
