@@ -127,4 +127,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-YOUTUBE_DATA_API_KEY = 'AIzaSyAjFFCS3tqOkwYr1qZLs580JbBfMaAxrlk'
+YOUTUBE_DATA_API_KEY = 'AIzaSyCjcWDe2_ifVZPLD37j41SxlS0vpHa3HIU'
+
+API_KEYS = ['abc','def','xyz']
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 100,
+}

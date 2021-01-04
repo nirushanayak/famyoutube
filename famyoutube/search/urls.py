@@ -3,5 +3,4 @@ from . import views
 
 urlpatterns = [
     path('videos/', views.VideosList.as_view()),
-    # path('', views.SnippetList.as_view()),
 ]

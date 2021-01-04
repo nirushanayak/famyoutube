@@ -5,4 +5,6 @@ WORKDIR /code
 COPY requirements.txt /code/
 RUN pip install -r requirements.txt
 COPY . /code/
-CMD ["python", "manage.py", "runserver"]
+COPY run.sh /code/
+RUN chmod +x /code/run.sh
+CMD ["./run.sh"]
